@@ -1,31 +1,31 @@
-function add(...nums) {
-    let value = 0;
-    nums.forEach(a => {
-        value += a;
-    })
-    return value;
+function add(a, b) {
+    return a + b;
 }
 
-function subtract(...nums) {
-    let value = nums[0];
-    for (let i = 1; i < nums.length; i++) {
-        value -= nums[i];
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    if (b == 0) return ":(";
+    return a / b;
+}
+
+function operate(num1, operation, num2) {
+    switch (operation) {
+        case "+":
+            return add(num1, num2);
+        case "-":
+            return subtract(num1, num2);
+        case "x":
+            return multiply(num1, num2);
+        case "/":
+            return divide(num1, num2);
+        default:
+            return "error";
     }
-    return value;
-}
-
-function multiply(...nums) {
-    let value = 1;
-    nums.forEach(a => {
-        value *= a;
-    })
-    return value;
-}
-
-function divide(...nums) {
-    let value = nums[0];
-    for (let i = 1; i < nums.length; i++) {
-        value /= nums[i];
-    }
-    return value;
 }

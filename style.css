@@ -1,0 +1,83 @@
+.calculator {
+    background-color: rgb(150, 150, 150);
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    transform: translateY(24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid grey;
+}
+
+.display {
+    height: 100px;
+    background-color: rgb(190, 190, 190);
+    width: 400px;
+    margin-top: 40px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    display: flex;
+}
+
+.buttons {
+    width: 450px;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.buttons .special-buttons {
+    gap: 64px;
+}
+
+.calculator .buttons .special-buttons button {
+    width: 120px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 8px;
+}
+
+.clear {
+    background-color: rgb(127, 166, 216);
+}
+
+.delete {
+    background-color: rgb(223, 138, 138);
+}
+
+.buttons div button {
+    height: 56px;
+    width: 56px;
+    border-radius: 18px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+.buttons div {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.current {
+    align-self: flex-end;
+    font-size: 48px;
+    margin-left: 12px;
+}
+
+.previous {
+    margin-left: auto;
+    margin-right: 12px;
+    margin-top: 4px;
+    color: rgb(97, 97, 97);
+}
