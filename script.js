@@ -1,3 +1,26 @@
+const display = document.querySelector(".display");
+const current = display.querySelector(".current");
+
+const numbers = document.querySelectorAll(".number");
+
+let isUsingDecimal = false;
+let currentText = "";
+
+numbers.forEach(num => {
+    num.addEventListener('click', addNumber);
+})
+
+function addNumber(e) {
+    let num = e.target.classList[0];
+    if (num == "decimal") {
+        if (isUsingDecimal) return;
+        isUsingDecimal = true;
+        num = ".";
+    }
+    currentText = currentText.concat(num);
+    current.textContent = currentText;
+}
+
 function add(a, b) {
     return a + b;
 }
