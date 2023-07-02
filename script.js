@@ -59,6 +59,8 @@ function keys(e) {
         isOperating = true;
         setCurrentText(currentText);
     }
+    if (e.key == "Backspace") backspace();
+    
 }
 
 function addNumber(e) {
